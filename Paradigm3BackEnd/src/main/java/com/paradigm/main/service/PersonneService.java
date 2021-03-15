@@ -13,9 +13,17 @@ import org.springframework.stereotype.Service;
 import com.paradigm.main.model.Personne;
 import com.paradigm.main.repository.PersonneRepository;
 
+/**
+ * Déclaration de service pour utiliser la persistance
+ * 
+ * @author Raul Herrera 
+ * **/
 @Service
 public class PersonneService implements PersonneRepository{
 	
+	/**
+	 * Attribut pour accéder à l'injection de dépendances JPA
+	 * **/
 	@Autowired
 	private PersonneRepository repository;
 
