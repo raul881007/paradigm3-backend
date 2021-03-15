@@ -20,6 +20,12 @@ public class Personne {
 		return id;
 	}
 
+	
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+
 	public String getPrenom() {
 		return prenom;
 	}
@@ -33,6 +39,7 @@ public class Personne {
 		this.id = id;
 		this.prenom = prenom;
 	}
+	
 
 	public Personne() {
 		
