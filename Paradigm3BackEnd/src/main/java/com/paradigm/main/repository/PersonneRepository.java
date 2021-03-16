@@ -1,5 +1,7 @@
 package com.paradigm.main.repository;
 
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.paradigm.main.model.Personne;
@@ -12,5 +14,7 @@ import com.paradigm.main.model.Personne;
  * 
  * **/
 public interface PersonneRepository extends JpaRepository<Personne, Long>{
+	
+	public Personne findByPrenom(String prenom);
 
 }

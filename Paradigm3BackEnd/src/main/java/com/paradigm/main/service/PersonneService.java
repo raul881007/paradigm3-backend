@@ -171,4 +171,10 @@ public class PersonneService implements PersonneRepository{
 		return false;
 	}
 
+	@Override
+	public Personne findByPrenom(String prenom) {
+		// TODO Auto-generated method stub
+		return repository.findByPrenom(prenom);
+	}
+
 }
